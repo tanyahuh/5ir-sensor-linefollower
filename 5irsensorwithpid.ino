@@ -60,8 +60,6 @@ void setup()
       sensor_average += sensor[i+2] * i * 1000;   //weighted mean   
       sensor_sum += int(sensor[i+2]);
     }
-  //sensor_average=analogRead(sensor1)*1*1000+analogRead(sensor2)*2*1000+analogRead(sensor3)*3*1000+analogRead(sensor4)*4*1000+analogRead(sensor5)*5*1000
-  //sensor_sum=int(sensor)
     position = int(sensor_average / sensor_sum);
   
     Serial.print(sensor_average);
